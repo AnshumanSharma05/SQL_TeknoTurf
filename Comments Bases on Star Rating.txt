@@ -1,0 +1,8 @@
+Select ResortId, Name,
+Case when
+StarRating<=5.0 and StarRating >=4.5 then "Excellent"
+StarRating<=4.5 and StarRating>=4.0 then"Good"
+else "Average"
+end as Comments
+from Table Name;
+

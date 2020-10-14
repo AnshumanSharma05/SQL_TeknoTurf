@@ -1,0 +1,2 @@
+Write a query to calculate and display the resort id , total count of bed rooms each resort . The result set should be in the ascending order of resort id . Give alias name to count of bed rooms as TOTALCOUNT. 
+Select ResortID, Count(bedroomCount) as totalCount from Cabin Group by resortID order by resortID;

@@ -1,0 +1,2 @@
+Number of Resort under each Manager
+select ManagerID, count(ResortID) from Resort where starRating>4 group by ManagerId order by ManagerId;

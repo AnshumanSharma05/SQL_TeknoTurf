@@ -1,0 +1,3 @@
+Select the  highest summer & lowest winter temperature and display the output as "HOT SUMMER" and "CHILL WINTER"
+
+Select max(Summertemp) as "Hot Summer", Min(Wintertemp) as "Chill Winter" from Town;

@@ -1,0 +1,1 @@
+select Length(comments) as comments_Length from review Where length(comments)>0 order by Comments_Length

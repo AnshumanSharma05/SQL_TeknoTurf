@@ -1,0 +1,4 @@
+
+Write a query to display number of available Ac and Non Ac buses . Give alias name to type as bus_type and count of buses as bus_count. Sort the records based count of buses in descending order
+
+Select type as Bus_Type, count(*) from Buses group by type order by bus_count desc;
