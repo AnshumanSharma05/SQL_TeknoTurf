@@ -1,0 +1,7 @@
+update buses set type="ac" where bus_no=33;
+update schedule set destination="Coimbatore" where s_id=4;
+update schedule set travel_date=travel_date+5 where source="Chennai" and destination="Bangalore";
+Delete from Payments where discount_id=101;
+Update Resort set starRating=4.2 where resortName="Tree of Life";
+Update Guest set phone="903004" where name="Mary Grey";
+Delete from Resort where ResortID=1002;

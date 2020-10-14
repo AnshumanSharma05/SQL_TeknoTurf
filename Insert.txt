@@ -1,0 +1,1 @@
+insert into tickets (Ticket_id, schedule_id) values (23,"ID NUMBER");
