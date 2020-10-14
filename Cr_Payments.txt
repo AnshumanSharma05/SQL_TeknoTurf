@@ -1,0 +1,8 @@
+Create Table Payments(
+Payment_Id Varchar2(3),
+Ticket_ID varchar2(3),
+BD_ID Number(11),
+Discount_ID Varchar2(3),
+Constraint Pk_Payments Primary key(Payment_Id),
+Constraint FK_Payments_Tickets Foreign key(Ticket_Id) references Tickets(Ticket_Id)
+)

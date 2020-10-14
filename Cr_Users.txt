@@ -1,0 +1,4 @@
+create table USERS (
+User_Id Number(11) Constraint PK_USERS Primary key,
+Name varchar2(20)
+)

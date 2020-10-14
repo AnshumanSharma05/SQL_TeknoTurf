@@ -1,0 +1,1 @@
+Alter Table Payments rename Column bd_id to booking_id;

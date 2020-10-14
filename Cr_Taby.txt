@@ -1,0 +1,6 @@
+Create Table XYZ (
+Dept_id number(4) Primary key,
+Prod_Id number(4) references Taby(Prod_Id),
+Dept_Name varchar2(25) Unique,
+Dept_head varchar2(25) Not Null
+);

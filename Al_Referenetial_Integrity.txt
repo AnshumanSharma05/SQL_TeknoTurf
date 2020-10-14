@@ -1,0 +1,1 @@
+Alter table PointOfInterest modify foreign key (townId) references Town(TownID);

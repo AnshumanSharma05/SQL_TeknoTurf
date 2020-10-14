@@ -1,0 +1,11 @@
+Create Table BUSES (
+Bus_No Number(11) Constraint PK_BUSES Primary key,
+Bus_Name varchar2(20)
+)
+
+or
+Create Table BUSES (
+Bus_No Number(11) ,
+Bus_Name varchar2(20),
+Constraint PK_BUSES Primary key(Bus_No)
+);

@@ -1,0 +1,8 @@
+Create Table Schedule (
+Schedule_id Varchar2(3) Constarint PK_Schedule Primary key,
+Travel_date date,
+Bus_No Number(11) ,
+constraint fk_schedule_buses foreign key (bus_no)
+references buses(bus_no))
+
+// this is how we put a constraint name for a foreign key
