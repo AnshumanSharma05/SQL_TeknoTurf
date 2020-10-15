@@ -1,0 +1,5 @@
+Select U.User_id,U.User_name
+from Users U join Tickets t on 
+u.User_Id=t.Ticket_Id join
+Cancellation c
+on c.ticket_Id=t.ticket_Id order by U,user_id;

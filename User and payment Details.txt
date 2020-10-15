@@ -1,0 +1,6 @@
+Select u.user_id as User_ID,u.user_name as User_Name
+,t.ticket_id, (t.Fare*t.No_Seats) as Total_amount,
+(t.Fare*t.No_Seats)-d.Discount_Amount as Paid_Amount 
+from Users u join Tickets t on u.user_id=t.user_id join
+Payments p on t.ticket_id=p.ticket_id join Discounts d
+on d.Discount_Id=p.Discount_ID order by u.User_id Desc

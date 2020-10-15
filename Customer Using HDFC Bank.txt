@@ -1,0 +1,6 @@
+Select U.User_Name, U.Address from
+Users U join BookingDetails b
+on u.User_Id=b.User_Id
+where b.user_id not in (select user_id from BookingDetails
+where name="HDFC")
+;

@@ -1,0 +1,9 @@
+Display schedule_id, source, destination and 
+travel_time which has minimum travel time. 
+Sort the result based on schedule id
+
+
+Select Schedule_id,Source,Destination, Duration
+from Schedule
+where Duration=(Select Min(Duration) from Schedule)
+;

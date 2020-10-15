@@ -1,0 +1,12 @@
+
+Write a query to display list of bus 
+number and names where source and destination 
+of a bus is the destination and source of 
+another bus. Display unique records in 
+ascending order by bus_no.
+
+
+Select b.Bus_no , b.bus_name from
+Buses b, Schedule s1, Schedule s2
+where b.bus_no=s1.bus_no and s1.source=s2.destination
+and s1.bus_No!=s2.Bus_no and s2.source=s1.destintion ;

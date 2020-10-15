@@ -1,0 +1,5 @@
+select r.resort_id,r.resortName,
+nvl2(M.name,m.name,'NA') as ManagerName,
+nvl2(m.phone,m.phone,'NA') as PhoneNo from resort r
+left join Manager m on r.manager_id=m.manager_id order by
+r.resortId;
