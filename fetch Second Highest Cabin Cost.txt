@@ -1,0 +1,5 @@
+Write a query to display the second highest cabin cost rate. 
+Give alias name as SECOND_MAX.
+
+Select max(cost) from cabincost
+where rate<(select max(rate) from cabincost);

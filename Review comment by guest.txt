@@ -1,0 +1,12 @@
+The resort manager wants to see the review comments
+given by the customer. 
+Write a query to display guest name, 
+resort name and review comments and display 
+the result set in ascending order of guest name 
+and resort name.
+
+
+select g.name,re.resortname,r.comments from 
+Guest g join Review r on g.guestId=r.guestid
+join Resort re on r.resortid=re.resortid
+order by g.name,re,resortname;

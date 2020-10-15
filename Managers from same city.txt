@@ -1,0 +1,10 @@
+Managements wants to display city and manager details if more than one manager from same city. 
+Write a query to display city , manager name and their phone number. 
+Sort the result based on city and manager name. 
+
+
+Select m1.city,m1.name,m1.phone from manager m1, manager m2
+where m1.managerid!=m2.managerid
+and m1.city=m2.city
+group by m1.city,m1.name,m1.phoneno
+order by m1.city,m1.name
