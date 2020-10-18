@@ -1,0 +1,7 @@
+Write a query to display all the town names which has summer temperature 
+more than “JAIPUR”. 
+Output should be sorted on town name
+
+Select townname from Town where 
+summertemp>(select summertemp from 
+Town where townname='Jaipur') order by 1;

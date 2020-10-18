@@ -1,0 +1,8 @@
+Write a query to display the resort name and 
+its manager name for resort located at "JAIPUR" 
+Sort by resort name .
+
+select r.resortName,m.Name from Resort r Join
+Manager m where m.ManagerId=r.ManagerId where
+r.townname='Jaipur'
+order by 1;
